@@ -63,8 +63,8 @@ const TaskList = () => {
             value={task}
             onChange={(e) => setTask(e.target.value)} // Cuando cambie el valor del input, actualizamos el estado
           />
-          <button type="submit">{isEditing ? "Editar" : "Añadir"}</button> // El
-          botón muestra "Editar" o "Añadir" dependiendo del estado
+          <button type="submit">{isEditing ? "Editar" : "Añadir"}</button>
+          {/* El texto del botón cambia si estamos editando */}
         </form>
         <div>
           {taskList.map(
@@ -116,7 +116,7 @@ const TaskList = () => {
                   taskList.length === 1 ? "tarea" : "tareas"
                 }` // Mostramos el número de tareas en la lista
               : "Agrega Tareas"}{" "}
-            // Si no hay tareas, mostramos un mensaje para que se añadan
+            {/*Si no hay tareas, mostramos un mensaje para que se añadan*/}
           </p>
         </div>
       </div>
