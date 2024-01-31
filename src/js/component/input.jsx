@@ -31,7 +31,7 @@ const TaskList = () => {
       setIsEditing(false);
       setAlert({ show: true, msg: "Valor cambiado", type: "success" });
     } else {
-      // Agregar Tarea
+      // Agregar Tarea asigna una id con la fecha y hora actual para luego acceder a ella y poder modificarla o eliminarla
       const newTask = { id: new Date().getTime().toString(), task };
       setTaskList([...taskList, newTask]);
       setTask("");
