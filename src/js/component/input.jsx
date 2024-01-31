@@ -40,6 +40,7 @@ const TaskList = () => {
         msg: "Tarea añadida a la lista",
         type: "success",
       });
+      console.log(taskList);
     }
   };
 
