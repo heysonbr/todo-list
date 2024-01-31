@@ -1,4 +1,3 @@
-
 /* 
 
     You can write your own styles here...
@@ -10,3 +9,27 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.task-item h5 {
+  position: relative;
+}
+
+.task-item h5 .edit-button,
+.task-item h5 .delete-button {
+  display: none;
+
+  right: 0;
+}
+
+.task-item h5 .edit-button {
+  top: 0;
+}
+
+.task-item h5 .delete-button {
+  bottom: 0;
+}
+
+.task-item h5:hover .edit-button,
+.task-item h5:hover .delete-button {
+  display: flex;
+}
