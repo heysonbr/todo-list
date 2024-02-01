@@ -65,11 +65,11 @@ const TaskList = () => {
               </div>
             </div>
           </form>
-          <ul className="list-group list-group-flush d-flex justify-content-between align-items-center">
+          <ul className="list-group list-group-flush">
             {taskList.map((item) => (
               <li
                 key={item.id}
-                className="list-group-item d-flex justify-content-between align-items-center"
+                className="list-group-item d-flex justify-content-center align-items-center"
               >
                 {item.task}
                 <div>
