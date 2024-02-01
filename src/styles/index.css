@@ -10,26 +10,10 @@
 
 */
 
-.task-item h5 {
-  position: relative;
+.hide-button {
+  visibility: hidden;
 }
 
-.task-item h5 .edit-button,
-.task-item h5 .delete-button {
-  display: none;
-
-  right: 0;
-}
-
-.task-item h5 .edit-button {
-  top: 0;
-}
-
-.task-item h5 .delete-button {
-  bottom: 0;
-}
-
-.task-item h5:hover .edit-button,
-.task-item h5:hover .delete-button {
-  display: flex;
+.list-group-item:hover .hide-button {
+  visibility: visible;
 }
